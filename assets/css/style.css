@@ -239,34 +239,6 @@ code{background:rgba(75,184,201,.12);color:var(--accent-soft);padding:.1em .45em
 .shot:hover{transform:translateY(-6px)}
 .shot:hover .shot__ph{filter:brightness(1.15)}
 
-/* ===== الباقات ===== */
-.plans{align-items:stretch}
-.plan{
-  display:flex;flex-direction:column;padding:2.25rem 1.85rem;border-radius:var(--radius);
-  background:var(--surface);border:1px solid var(--line);position:relative;
-  transition:transform .35s var(--ease),border-color .35s;
-}
-.plan:hover{transform:translateY(-6px);border-color:rgba(75,184,201,.35)}
-.plan--featured{
-  border-color:rgba(75,184,201,.5);
-  background:linear-gradient(170deg,rgba(75,184,201,.09),var(--surface) 45%);
-  box-shadow:var(--shadow);
-}
-.plan__badge{
-  position:absolute;top:-13px;left:50%;transform:translateX(-50%);
-  background:var(--grad);color:#04171c;font-size:.78rem;font-weight:800;
-  padding:.25rem 1rem;border-radius:999px;white-space:nowrap;
-}
-.plan__name{font-size:1.2rem;color:var(--accent-soft);margin-bottom:.4rem}
-.plan__price{font-size:1rem;color:var(--muted);margin-bottom:1.5rem}
-.plan__price span{font-size:2.3rem;font-weight:900;color:var(--text);margin-inline-end:.35rem}
-.plan__list{display:grid;gap:.7rem;margin-bottom:2rem}
-.plan__list li{position:relative;padding-inline-start:1.7rem;font-size:.93rem;color:var(--muted)}
-.plan__list li::before{
-  content:"✓";position:absolute;inset-inline-start:0;color:var(--accent);font-weight:900;
-}
-.plan .btn{margin-top:auto}
-
 /* ===== آراء العملاء ===== */
 .quote{
   margin:0;padding:2rem 1.75rem;border-radius:var(--radius);

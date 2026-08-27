@@ -140,17 +140,8 @@
     sections.forEach(function (s) { sectionObserver.observe(s); });
   }
 
-  /* ---------- اختيار باقة يملأ نموذج التواصل ---------- */
   var serviceField = document.getElementById('service');
   var detailsField = document.getElementById('details');
-
-  document.querySelectorAll('[data-plan]').forEach(function (link) {
-    link.addEventListener('click', function () {
-      if (!detailsField) return;
-      detailsField.value = 'مهتم بـ' + link.dataset.plan + '. ';
-      setTimeout(function () { detailsField.focus(); }, 600);
-    });
-  });
 
   /* ---------- إرسال النموذج عبر واتساب ---------- */
   var form = document.getElementById('contactForm');
