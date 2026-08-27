@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  var WHATSAPP_NUMBER = '201000000000';
+  var WHATSAPP_NUMBER = '966550798990';
 
   /* ---------- القائمة على الموبايل ---------- */
   var nav = document.getElementById('nav');
