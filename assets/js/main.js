@@ -167,7 +167,7 @@
     }
 
     var message =
-      'السلام عليكم، عايز أستفسر عن خدماتكم.\n' +
+      'السلام عليكم، أبغى أستفسر عن خدماتكم.\n' +
       'الاسم: ' + name + '\n' +
       'رقم التواصل: ' + phone + '\n' +
       'الخدمة: ' + serviceField.value + '\n' +
@@ -175,7 +175,7 @@
       'التفاصيل: ' + (detailsField.value.trim() || 'لا يوجد');
 
     window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(message), '_blank', 'noopener');
-    note.textContent = 'تم فتح واتساب برسالتك — لو ما اتفتحش، كلمني على الرقم فوق.';
+    note.textContent = 'تم فتح واتساب برسالتك — إذا ما فتح، كلمني على الرقم فوق.';
     form.reset();
   });
 
