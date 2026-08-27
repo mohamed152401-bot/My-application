@@ -80,7 +80,7 @@ code{background:rgba(75,184,201,.12);color:var(--accent-soft);padding:.1em .45em
 .header__inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:78px}
 
 .brand{display:flex;align-items:center;gap:.7rem}
-.brand__mark{width:56px;height:56px;filter:drop-shadow(0 6px 16px rgba(75,184,201,.25));transition:transform .5s var(--ease)}
+.brand__mark{width:56px;height:56px;border-radius:50%;object-fit:cover;filter:drop-shadow(0 6px 16px rgba(75,184,201,.25));transition:transform .5s var(--ease)}
 .brand:hover .brand__mark{transform:rotate(60deg)}
 .brand__text{display:flex;flex-direction:column;line-height:1.25}
 .brand__name{font-weight:900;font-size:1.35rem;letter-spacing:.5px;
