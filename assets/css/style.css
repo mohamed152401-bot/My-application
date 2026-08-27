@@ -242,6 +242,8 @@ code{background:rgba(75,184,201,.12);color:var(--accent-soft);padding:.1em .45em
 .shot__cap span{font-size:.85rem;color:var(--muted)}
 .shot:hover{transform:translateY(-6px)}
 .shot:hover .shot__ph{filter:brightness(1.15)}
+.shot__img{aspect-ratio:4/3;width:100%;object-fit:cover;transition:filter .35s var(--ease)}
+.shot:hover .shot__img{filter:brightness(1.1)}
 
 /* ===== آراء العملاء ===== */
 .quote{
