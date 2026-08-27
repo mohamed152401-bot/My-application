@@ -175,7 +175,7 @@
       'التفاصيل: ' + (detailsField.value.trim() || 'لا يوجد');
 
     window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(message), '_blank', 'noopener');
-    note.textContent = 'تم فتح واتساب برسالتك — إذا ما فتح، كلمني على الرقم فوق.';
+    note.textContent = 'تم فتح واتساب برسالتك — إذا ما فتح، كلمنا على الرقم فوق.';
     form.reset();
   });
 
