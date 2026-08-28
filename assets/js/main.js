@@ -179,6 +179,42 @@
     form.reset();
   });
 
+  /* ---------- تكبير الفيديو بالصوت عند الضغط عليه ---------- */
+  var videoModal = document.getElementById('videoModal');
+  var videoModalPlayer = document.getElementById('videoModalPlayer');
+
+  function openVideoModal(src) {
+    videoModalPlayer.src = src;
+    videoModalPlayer.muted = false;
+    videoModal.classList.add('is-open');
+    videoModal.setAttribute('aria-hidden', 'false');
+    videoModalPlayer.play();
+  }
+
+  function closeVideoModal() {
+    videoModal.classList.remove('is-open');
+    videoModal.setAttribute('aria-hidden', 'true');
+    videoModalPlayer.pause();
+    videoModalPlayer.removeAttribute('src');
+    videoModalPlayer.load();
+  }
+
+  document.querySelectorAll('.shot--video').forEach(function (card) {
+    card.addEventListener('click', function () {
+      openVideoModal(card.dataset.videoSrc);
+    });
+  });
+
+  videoModal.querySelectorAll('[data-video-close]').forEach(function (el) {
+    el.addEventListener('click', closeVideoModal);
+  });
+
+  videoModalPlayer.addEventListener('ended', closeVideoModal);
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && videoModal.classList.contains('is-open')) closeVideoModal();
+  });
+
   /* ---------- سنة الحقوق ---------- */
   document.getElementById('year').textContent = new Date().getFullYear();
 })();
